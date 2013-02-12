@@ -1,0 +1,954 @@
+12:31:41: Creating resource group General
+12:31:41: Creating resource group Internal
+12:31:41: Creating resource group Autodetect
+12:31:41: SceneManagerFactory for type 'DefaultSceneManager' registered.
+12:31:41: Registering ResourceManager for type Material
+12:31:41: Registering ResourceManager for type Mesh
+12:31:41: Registering ResourceManager for type Skeleton
+12:31:41: MovableObjectFactory for type 'ParticleSystem' registered.
+12:31:41: OverlayElementFactory for type Panel registered.
+12:31:41: OverlayElementFactory for type BorderPanel registered.
+12:31:41: OverlayElementFactory for type TextArea registered.
+12:31:41: Registering ResourceManager for type Font
+12:31:41: ArchiveFactory for archive type FileSystem registered.
+12:31:41: ArchiveFactory for archive type Zip registered.
+12:31:41: DDS codec registering
+12:31:41: FreeImage version: 3.15.1
+12:31:41: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+12:31:41: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,sti
+12:31:41: Registering ResourceManager for type HighLevelGpuProgram
+12:31:41: Registering ResourceManager for type Compositor
+12:31:41: MovableObjectFactory for type 'Entity' registered.
+12:31:41: MovableObjectFactory for type 'Light' registered.
+12:31:41: MovableObjectFactory for type 'BillboardSet' registered.
+12:31:41: MovableObjectFactory for type 'ManualObject' registered.
+12:31:41: MovableObjectFactory for type 'BillboardChain' registered.
+12:31:41: MovableObjectFactory for type 'RibbonTrail' registered.
+12:31:41: Loading library /usr/local/lib/OGRE/RenderSystem_GL
+12:31:41: Installing plugin: GL RenderSystem
+12:31:41: OpenGL Rendering Subsystem created.
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_ParticleFX
+12:31:41: Installing plugin: ParticleFX
+12:31:41: Particle Emitter Type 'Point' registered
+12:31:41: Particle Emitter Type 'Box' registered
+12:31:41: Particle Emitter Type 'Ellipsoid' registered
+12:31:41: Particle Emitter Type 'Cylinder' registered
+12:31:41: Particle Emitter Type 'Ring' registered
+12:31:41: Particle Emitter Type 'HollowEllipsoid' registered
+12:31:41: Particle Affector Type 'LinearForce' registered
+12:31:41: Particle Affector Type 'ColourFader' registered
+12:31:41: Particle Affector Type 'ColourFader2' registered
+12:31:41: Particle Affector Type 'ColourImage' registered
+12:31:41: Particle Affector Type 'ColourInterpolator' registered
+12:31:41: Particle Affector Type 'Scaler' registered
+12:31:41: Particle Affector Type 'Rotator' registered
+12:31:41: Particle Affector Type 'DirectionRandomiser' registered
+12:31:41: Particle Affector Type 'DeflectorPlane' registered
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_BSPSceneManager
+12:31:41: Installing plugin: BSP Scene Manager
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_CgProgramManager
+12:31:41: Installing plugin: Cg Program Manager
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_PCZSceneManager
+12:31:41: Installing plugin: Portal Connected Zone Scene Manager
+12:31:41: PCZone Factory Type 'ZoneType_Default' registered
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_OctreeZone
+12:31:41: Installing plugin: Octree Zone Factory
+12:31:41: Plugin successfully installed
+12:31:41: Loading library /usr/local/lib/OGRE/Plugin_OctreeSceneManager
+12:31:41: Installing plugin: Octree & Terrain Scene Manager
+12:31:41: Plugin successfully installed
+12:31:41: *-*-* OGRE Initialising
+12:31:41: *-*-* Version 1.7.4 (Cthugha)
+12:31:41: Loading library RenderSystem_GL
+12:31:41: Installing plugin: GL RenderSystem
+12:31:41: OpenGL Rendering Subsystem created.
+12:31:41: Plugin successfully installed
+12:31:41: CPU Identifier & Features
+12:31:41: -------------------------
+12:31:41:  *   CPU ID: GenuineIntel: Intel(R) Core(TM) i7-3770K CPU @ 3.50GHz
+12:31:41:  *      SSE: yes
+12:31:41:  *     SSE2: yes
+12:31:41:  *     SSE3: yes
+12:31:41:  *      MMX: yes
+12:31:41:  *   MMXEXT: yes
+12:31:41:  *    3DNOW: no
+12:31:41:  * 3DNOWEXT: no
+12:31:41:  *     CMOV: yes
+12:31:41:  *      TSC: yes
+12:31:41:  *      FPU: yes
+12:31:41:  *      PRO: yes
+12:31:41:  *       HT: no
+12:31:41: -------------------------
+12:31:41: ******************************
+*** Starting GLX Subsystem ***
+******************************
+12:31:41: GLRenderSystem::_createRenderWindow "SpaceSurvival Engine Pre-Alpha v0.1", 1680x1050 fullscreen  miscParams: FSAA=0 displayFrequency=50 MHz gamma=No vsync=No 
+12:31:41: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource GLX_icon.png in resource group General or any other group. in ResourceGroupManager::openResource at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreResourceGroupManager.cpp (line 753)
+12:31:41: GLXWindow::create used FBConfigID = 261
+12:31:41: GL_VERSION = 4.3.0 NVIDIA 310.19
+12:31:41: GL_VENDOR = NVIDIA Corporation
+12:31:41: GL_RENDERER = GeForce GTX 560 Ti/PCIe/SSE2
+12:31:41: GL_EXTENSIONS = GL_AMD_multi_draw_indirect GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_clear_buffer_object GL_ARB_color_buffer_float GL_ARB_compatibility GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_texture_type_2_10_10_10_REV GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_debug GL_KTX_buffer_region GL_NV_alpha_test GL_NV_blend_minmax GL_NV_blend_square GL_NV_complex_primitives GL_NV_compute_program5 GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_ES1_1_compatibility GL_NV_explicit_multisample GL_NV_fbo_color_attachments GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragdepth GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_expand_normal GL_NV_texture_lod_clamp GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_vdpau_interop GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NVX_gpu_memory_info GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_depth32 GL_OES_depth_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_rgb8_rgba8 GL_OES_read_format GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_vertex_half_float GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum 
+12:31:41: Supported GLX extensions: GLX_EXT_visual_info GLX_EXT_visual_rating GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_video_sync GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_ARB_create_context GLX_ARB_create_context_profile GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_robustness GLX_ARB_multisample GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_framebuffer_sRGB GLX_NV_multisample_coverage GLX_ARB_get_proc_address 
+12:31:41: ***************************
+12:31:41: *** GL Renderer Started ***
+12:31:41: ***************************
+12:31:41: Registering ResourceManager for type GpuProgram
+12:31:41: GLSL support detected
+12:31:41: GL: Using GL_EXT_framebuffer_object for rendering to textures (best)
+12:31:41: FBO PF_UNKNOWN depth/stencil support: D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_L8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A4L4 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_BYTE_LA depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_R5G6B5 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_B5G6R5 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A4R4G4B4 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A1R5G5B5 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_R8G8B8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_B8G8R8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A8R8G8B8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_B8G8R8A8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A2R10G10B10 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_A2B10G10R10 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT16_RGB depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT16_RGBA depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT32_RGB depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT32_RGBA depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_X8R8G8B8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_X8B8G8R8 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_SHORT_RGBA depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_R3G3B2 depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT16_R depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT32_R depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT16_GR depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_FLOAT32_GR depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: FBO PF_SHORT_RGB depth/stencil support: D0S0 D0S8 D16S0 D24S0 D32S0 Packed-D24S8 
+12:31:41: [GL] : Valid FBO targets PF_UNKNOWN PF_L8 PF_A8 PF_A4L4 PF_BYTE_LA PF_R5G6B5 PF_B5G6R5 PF_A4R4G4B4 PF_A1R5G5B5 PF_R8G8B8 PF_B8G8R8 PF_A8R8G8B8 PF_B8G8R8A8 PF_A2R10G10B10 PF_A2B10G10R10 PF_FLOAT16_RGB PF_FLOAT16_RGBA PF_FLOAT32_RGB PF_FLOAT32_RGBA PF_X8R8G8B8 PF_X8B8G8R8 PF_SHORT_RGBA PF_R3G3B2 PF_FLOAT16_R PF_FLOAT32_R PF_FLOAT16_GR PF_FLOAT32_GR PF_SHORT_RGB 
+12:31:41: RenderSystem capabilities
+12:31:41: -------------------------
+12:31:41: RenderSystem Name: OpenGL Rendering Subsystem
+12:31:41: GPU Vendor: nvidia
+12:31:41: Device Name: GeForce GTX 560 Ti/PCIe/SSE2
+12:31:41: Driver Version: 4.3.0.0
+12:31:41:  * Fixed function pipeline: yes
+12:31:41:  * Hardware generation of mipmaps: yes
+12:31:41:  * Texture blending: yes
+12:31:41:  * Anisotropic texture filtering: yes
+12:31:41:  * Dot product texture operation: yes
+12:31:41:  * Cube mapping: yes
+12:31:41:  * Hardware stencil buffer: yes
+12:31:41:    - Stencil depth: 8
+12:31:41:    - Two sided stencil support: yes
+12:31:41:    - Wrap stencil values: yes
+12:31:41:  * Hardware vertex / index buffers: yes
+12:31:41:  * Vertex programs: yes
+12:31:41:  * Number of floating-point constants for vertex programs: 1024
+12:31:41:  * Number of integer constants for vertex programs: 0
+12:31:41:  * Number of boolean constants for vertex programs: 0
+12:31:41:  * Fragment programs: yes
+12:31:41:  * Number of floating-point constants for fragment programs: 512
+12:31:41:  * Number of integer constants for fragment programs: 0
+12:31:41:  * Number of boolean constants for fragment programs: 0
+12:31:41:  * Geometry programs: yes
+12:31:41:  * Number of floating-point constants for geometry programs: 2048
+12:31:41:  * Number of integer constants for geometry programs: 0
+12:31:41:  * Number of boolean constants for geometry programs: 0
+12:31:41:  * Supported Shader Profiles: arbfp1 arbvp1 fp20 fp30 fp40 glsl gp4gp gp4vp gpu_gp gpu_vp nvgp4 vp30 vp40
+12:31:41:  * Texture Compression: yes
+12:31:41:    - DXT: yes
+12:31:41:    - VTC: yes
+12:31:41:    - PVRTC: no
+12:31:41:  * Scissor Rectangle: yes
+12:31:41:  * Hardware Occlusion Query: yes
+12:31:41:  * User clip planes: yes
+12:31:41:  * VET_UBYTE4 vertex element type: yes
+12:31:41:  * Infinite far plane projection: yes
+12:31:41:  * Hardware render-to-texture: yes
+12:31:41:  * Floating point textures: yes
+12:31:41:  * Non-power-of-two textures: yes
+12:31:41:  * Volume textures: yes
+12:31:41:  * Multiple Render Targets: 8
+12:31:41:    - With different bit depths: yes
+12:31:41:  * Point Sprites: yes
+12:31:41:  * Extended point parameters: yes
+12:31:41:  * Max Point Size: 63.375
+12:31:41:  * Vertex texture fetch: yes
+12:31:41:  * Number of world matrices: 0
+12:31:41:  * Number of texture units: 32
+12:31:41:  * Stencil buffer depth: 8
+12:31:41:  * Number of vertex blend matrices: 0
+12:31:41:    - Max vertex textures: 32
+12:31:41:    - Vertex textures shared: yes
+12:31:41:  * Render to Vertex Buffer : yes
+12:31:41:  * GL 1.5 without VBO workaround: no
+12:31:41:  * Frame Buffer objects: yes
+12:31:41:  * Frame Buffer objects (ARB extension): no
+12:31:41:  * Frame Buffer objects (ATI extension): no
+12:31:41:  * PBuffer support: yes
+12:31:41:  * GL 1.5 without HW-occlusion workaround: no
+12:31:41: Registering ResourceManager for type Texture
+12:31:41: DefaultWorkQueue('Root') initialising on thread 0x1a44fc0.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1cb2f40 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fa94a0 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0ca0 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fa8fd0 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0320 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0620 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0920 starting.
+12:31:41: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fafb10 starting.
+12:31:41: Particle Renderer Type 'billboard' registered
+12:31:41: SceneManagerFactory for type 'BspSceneManager' registered.
+12:31:41: Registering ResourceManager for type BspLevel
+12:31:41: SceneManagerFactory for type 'PCZSceneManager' registered.
+12:31:41: MovableObjectFactory for type 'PCZLight' registered.
+12:31:41: MovableObjectFactory for type 'Portal' registered.
+12:31:41: MovableObjectFactory for type 'AntiPortal' registered.
+12:31:41: PCZone Factory Type 'ZoneType_Octree' registered
+12:31:41: PCZone Factory Type 'ZoneType_Terrain' registered
+12:31:41: SceneManagerFactory for type 'OctreeSceneManager' registered.
+12:31:41: SceneManagerFactory for type 'TerrainSceneManager' registered.
+12:31:41: Added resource location '.' of type 'FileSystem' to resource group 'General'
+12:31:41: Added resource location './Textures' of type 'FileSystem' to resource group 'General'
+12:31:41: Added resource location './Materials' of type 'FileSystem' to resource group 'General'
+12:31:41: Added resource location 'SdkTrays.zip' of type 'Zip' to resource group 'General'
+12:31:41: Parsing scripts for resource group Autodetect
+12:31:41: Finished parsing scripts for resource group Autodetect
+12:31:41: Parsing scripts for resource group General
+12:31:41: Parsing script VolumetricSunLight.program
+12:31:41: Parsing script DepthShadowmap.program
+12:31:41: Parsing script PlainTexture.material
+12:31:41: Parsing script VolumetricSunLight.material
+12:31:41: Compiler error: number expected in VolumetricSunLight.material(104): incorrect float constant declaration
+12:31:41: Parsing script shader1.material
+12:31:41: Parsing script triplanarmaterial.material
+12:31:41: Parsing script DepthShadowMap.material
+12:31:41: Parsing script basic.material
+12:31:41: Parsing script OneTexture.material
+12:31:41: Parsing script MultiTexture.material
+12:31:41: Parsing script MultiTextureEditor.material
+12:31:41: Parsing script SdkTrays.material
+12:31:41: Parsing script VolumetricSunLight.compositor
+12:31:41: Parsing script SdkTrays.fontdef
+12:31:41: Parsing script SdkTrays.overlay
+12:31:41: Bad element attribute line: '# you can offset the image to change the cursor "hotspot"' for element SdkTrays/Cursor in overlay 
+12:31:41: Texture: sdk_cursor.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_tray.png: Loading 1 faces(PF_A8R8G8B8,64x64x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,64x64x1.
+12:31:41: Texture: sdk_button_up.png: Loading 1 faces(PF_A8R8G8B8,128x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x32x1.
+12:31:41: Texture: sdk_text_box.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_mini_tray.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_track.png: Loading 1 faces(PF_A8R8G8B8,16x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,16x32x1.
+12:31:41: Texture: sdk_handle.png: Loading 1 faces(PF_A8R8G8B8,16x16x1) with 4 generated mipmaps from Image. Internal format is PF_A8R8G8B8,16x16x1.
+12:31:41: Texture: sdk_mini_text_box.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_label.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_separator.png: Loading 1 faces(PF_A8R8G8B8,64x16x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,64x16x1.
+12:31:41: Texture: sdk_logo.png: Loading 1 faces(PF_A8R8G8B8,128x64x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x64x1.
+12:31:41: Texture: sdk_shade.png: Loading 1 faces(PF_A8R8G8B8,64x48x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,64x48x1.
+12:31:41: Texture: sdk_frame.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_mini_text_box_over.png: Loading 1 faces(PF_A8R8G8B8,32x32x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,32x32x1.
+12:31:41: Texture: sdk_pulse.png: Loading 1 faces(PF_R8G8B8,8x1x1) with 3 generated mipmaps from Image. Internal format is PF_X8R8G8B8,8x1x1.
+12:31:41: Finished parsing scripts for resource group General
+12:31:41: Parsing scripts for resource group Internal
+12:31:41: Finished parsing scripts for resource group Internal
+12:31:41: Font SdkTrays/Captionusing texture size 512x256
+12:31:41: Info: Freetype returned null for character 160 in font SdkTrays/Caption
+12:31:41: Texture: SdkTrays/CaptionTexture: Loading 1 faces(PF_BYTE_LA,512x256x1) with 0 generated mipmaps from Image. Internal format is PF_BYTE_LA,512x256x1.
+12:31:41: Initialized!
+12:31:42: Start main loop...
+12:31:42: Font SdkTrays/Valueusing texture size 512x256
+12:31:42: Info: Freetype returned null for character 127 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 128 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 129 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 130 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 131 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 132 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 133 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 134 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 135 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 136 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 137 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 138 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 139 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 140 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 141 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 142 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 143 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 144 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 145 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 146 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 147 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 148 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 149 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 150 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 151 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 152 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 153 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 154 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 155 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 156 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 157 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 158 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 159 in font SdkTrays/Value
+12:31:42: Info: Freetype returned null for character 160 in font SdkTrays/Value
+12:31:42: Texture: SdkTrays/ValueTexture: Loading 1 faces(PF_BYTE_LA,512x256x1) with 0 generated mipmaps from Image. Internal format is PF_BYTE_LA,512x256x1.
+12:31:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:31:42: Texture: bigTerrain.png: Loading 1 faces(PF_A8R8G8B8,1024x768x1) with 5 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1024x768x1.
+12:31:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:31:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:31:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:47: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:48: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:32:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:33:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:35:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:58: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:36:59: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:37:13: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:18: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:19: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:20: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:21: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:22: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:23: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:24: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:49: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:52: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-1' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:53: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-0' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:54: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:55: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:56: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:59: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:59: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:59: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:39:59: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk3-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk4-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk5-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk6-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk7-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk8-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk9-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk10-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk11-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk12-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:01: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-5' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-6' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:02: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:03: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:10: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-22' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk0-23' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-22' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:50: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk1-23' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:40:51: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk2-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:41:26: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:41:26: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:41:26: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-3' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:41:26: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-4' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:41:26: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:42:00: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-2' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:28: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:28: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk13-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:28: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:29: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk14-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:29: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:29: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk15-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:30: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:30: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk16-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:31: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk17-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk18-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk19-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:32: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk20-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk21-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:33: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk22-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:34: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk23-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:35: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk24-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:36: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk25-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:37: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk26-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:38: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk27-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk28-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:39: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk29-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:40: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk30-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:41: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:42: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk31-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-7' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-8' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-9' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-10' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-11' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-12' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-13' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-14' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-15' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-16' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-17' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-18' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-19' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-20' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:43: OGRE EXCEPTION(5:ItemIdentityException): SceneNode 'NChunk32-21' not found. in SceneManager::getSceneNode at /home/radek/SpaceSurvival/ogre/ogre_src_v1-7-4/OgreMain/src/OgreSceneManager.cpp (line 895)
+12:43:44: Main loop quit
+12:43:44: Shutdown OGRE...
+12:43:44: DefaultWorkQueue('Root') shutting down on thread 0x1a44fc0.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1cb2f40 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fa94a0 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fa8fd0 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0320 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fafb10 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0920 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0ca0 stopped.
+12:43:44: DefaultWorkQueue('Root')::WorkerFunc - thread 0x1fb0620 stopped.
+12:43:44: PCZone Factory Type 'ZoneType_Octree' unregistered
+12:43:44: PCZone Factory Type 'ZoneType_Terrain' unregistered
+12:43:44: Unregistering ResourceManager for type BspLevel
+12:43:44: *-*-* OGRE Shutdown
+12:43:44: Unregistering ResourceManager for type Compositor
+12:43:44: Unregistering ResourceManager for type Font
+12:43:44: Unregistering ResourceManager for type Skeleton
+12:43:44: Unregistering ResourceManager for type Mesh
+12:43:44: Unregistering ResourceManager for type HighLevelGpuProgram
+12:43:44: Uninstalling plugin: GL RenderSystem
+12:43:44: ******************************
+*** Stopping GLX Subsystem ***
+******************************
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library RenderSystem_GL
+12:43:44: Uninstalling plugin: Octree & Terrain Scene Manager
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_OctreeSceneManager
+12:43:44: Uninstalling plugin: Octree Zone Factory
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_OctreeZone
+12:43:44: Uninstalling plugin: Portal Connected Zone Scene Manager
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_PCZSceneManager
+12:43:44: Uninstalling plugin: Cg Program Manager
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_CgProgramManager
+12:43:44: Uninstalling plugin: BSP Scene Manager
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_BSPSceneManager
+12:43:44: Uninstalling plugin: ParticleFX
+12:43:44: Plugin successfully uninstalled
+12:43:44: Unloading library /usr/local/lib/OGRE/Plugin_ParticleFX

@@ -1,0 +1,79 @@
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////
+
+vertex_program VolumetricSunLightSceneWithOutTextures_VP cg
+{
+	source VolumetricSunLight_Nontextured.cg
+	entry_point main_vp
+	profiles vs_1_1 arbvp1
+	
+	default_params 
+    { 
+        param_named_auto		worldViewProj	worldviewproj_matrix 
+        param_named				color			float3	0.0 0.0 0.0
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////
+// volumetric lightshaft
+vertex_program VolumetricSunLightScatering_VP	cg
+{
+	source VolumetricSunLight_LightShafts.cg
+	entry_point main_vp
+	profiles vs_3_0 arbvp1
+}
+
+fragment_program VolumetricSunLightScatering_FP	cg 
+{ 
+	source VolumetricSunLight_LightShafts.cg
+	entry_point main_fp 
+	profiles ps_3_0 arbfp1
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////
+// final blending 
+vertex_program VolumetricSunLightFinalBlend_VP	cg
+{
+	source VolumetricSunLight_FinalBlend.cg
+	entry_point main_vp
+	profiles vs_2_0 arbvp1
+}
+
+fragment_program VolumetricSunLightFinalBlend_FP	cg 
+{ 
+	source VolumetricSunLight_FinalBlend.cg
+	entry_point main_fp 
+	profiles ps_2_0 arbfp1
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////
+// fake sky
+vertex_program VolumetricSunLight_FakeSky_VP	cg
+{
+	source VolumetricSunLight_FakeSky.cg
+	entry_point main_vp
+	profiles vs_2_0 arbvp1
+}
+
+fragment_program VolumetricSunLight_FakeSky_FP	cg 
+{ 
+	source VolumetricSunLight_FakeSky.cg
+	entry_point main_fp 
+	profiles ps_2_0 arbfp1
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////

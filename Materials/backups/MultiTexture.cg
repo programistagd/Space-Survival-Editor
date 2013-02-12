@@ -1,0 +1,119 @@
+void main_multi_texture_vp(
+	in float4 iPosition : POSITION,					
+	in float3 iNormal : NORMAL,			
+	in float4 iColor : COLOR,
+	
+	uniform float4x4 worldviewproj,	
+	
+	out float4 oPosition : POSITION,
+	out float3 oNormal : TEXCOORD0,
+	out float3 oPos : TEXCOORD1,
+	out float4 alphas1 : TEXCOORD2
+	)
+{	
+	oPosition = mul(worldviewproj, iPosition);
+	oNormal = normalize(iNormal);
+	oPos = iPosition.xyz / iPosition.w;
+	alphas1=float4(0,0,0,0);
+	switch(int(iColor.r*4)){
+		case 0:alphas1.x=1.0;break;
+		case 1:alphas1.y=1.0;break;
+		case 2:alphas1.z=1.0;break;
+		default:alphas1.w=1.0;break;
+	}
+}
+
+float4 multi_texture_get_tex(in sampler2D tex,in float3 blend_weights, in float4 iPos, in int matId){
+	int nCols=2,nRows=2;
+	float tex_scale = 0.9f;
+	float4 blended_colour;
+	int matY=floor(matId/float(nCols));
+	int matX=matId-matY*nCols;
+	
+	  
+		// Compute the UV coords for each of the 3 planar projections.  
+		// tex_scale (default ~ 1.0) determines how big the textures appear.  
+		
+		// j'ai remplace v2f.wsCoord par oPos : je suppose que v2f.wsCoord signifie :
+		// vertex-2-fragment : world space coordinate
+		float2 coord1 = frac(iPos.yz * tex_scale)*0.9+0.05;  
+		float2 coord2 = frac(iPos.zx * tex_scale)*0.9+0.05;  
+		float2 coord3 = frac(iPos.xy * tex_scale)*0.9+0.05;  
+		coord1.x/=nCols;coord2.x/=nCols;coord3.x/=nCols;
+		coord1.y/=nRows;coord2.y/=nRows;coord3.y/=nRows;
+		coord1.x+=matX/float(nCols);coord2.x+=matX/float(nCols);coord3.x+=matX/float(nCols);
+		coord1.y+=matY/float(nRows);coord2.y+=matY/float(nRows);coord3.y+=matY/float(nRows);
+		// This is where you would apply conditional displacement mapping.  
+		//if (blend_weights.x > 0) coord1 = . . .  
+		//if (blend_weights.y > 0) coord2 = . . .  
+		//if (blend_weights.z > 0) coord3 = . . .  
+		
+		// Sample color maps for each projection, at those UV coords.  
+		float4 col1 = tex2D(tex, coord1); //* 0.01 + float4(1.0,0.0,0.0,1.0); // uncomment to see the blending in red/green/blue only
+		float4 col2 = tex2D(tex, coord2); //* 0.01 + float4(0.0,1.0,0.0,1.0);
+		float4 col3 = tex2D(tex, coord3); //* 0.01 + float4(0.0,0.0,1.0,1.0);
+
+		// Finally, blend the results of the 3 planar projections.  
+		blended_colour = col1.xyzw * blend_weights.xxxx +  
+						col2.xyzw * blend_weights.yyyy +  
+						col3.xyzw * blend_weights.zzzz; 
+		return blended_colour;
+}
+
+void main_multi_texture_fp(
+	in float3 iNormal : TEXCOORD0,
+	in float4 iPos : TEXCOORD1,
+	in float4 alphas1 : TEXCOORD2,
+	uniform sampler2D mainTexture,
+	out float4 oColour : COLOR
+)
+{	
+
+
+	// Determine the blend weights for the 3 planar projections.  
+	// iNormal is the vertex-interpolated normal vector.  
+	float3 absNormal = abs( iNormal.xyz );   
+	float3 blend_weights = absNormal;
+	// Tighten up the blending zone:  
+	
+	// -> ORIGINAL : 
+	//blend_weights = (blend_weights - 0.2) * 7; // => in original paper,
+	// 	but I don't see how the *7 is supposed to change anything, 
+	//	since there is a division by itself just after (see "Force weights to sum to 1.0").
+	blend_weights = (blend_weights - 0.5);
+	blend_weights = max(blend_weights, 0);
+
+	// Force weights to sum to 1.0
+	blend_weights /= (blend_weights.x + blend_weights.y + blend_weights.z ).xxx;
+
+	// Now determine a color value for each of the 3  
+	// projections, blend them, and store blended results
+	float4 blended_color = alphas1.x*multi_texture_get_tex(mainTexture,blend_weights,iPos,0)+alphas1.y*multi_texture_get_tex(mainTexture,blend_weights,iPos,1)+alphas1.z*multi_texture_get_tex(mainTexture,blend_weights,iPos,2)+alphas1.w*multi_texture_get_tex(mainTexture,blend_weights,iPos,3);
+	/*float4 blended_color=float4(0,0,0,1);
+	/*if(alphas1.x>0.0) blended_color+=alphas1.x*multi_texture_get_tex(mainTexture,blend_weights,iPos,0);
+	if(alphas1.y>0.0) blended_color+=alphas1.y*multi_texture_get_tex(mainTexture,blend_weights,iPos,1);
+	if(alphas1.z>0.0) blended_color+=alphas1.z*multi_texture_get_tex(mainTexture,blend_weights,iPos,2);
+	if(alphas1.w>0.0) blended_color+=alphas1.w*multi_texture_get_tex(mainTexture,blend_weights,iPos,3);*/
+	// (absNormal.yyyy*0.6 + 0.4 ) is to see better the 3D, like a completely fake double lighting (up and down).
+	//oColour = blended_color;// * (absNormal.yyyy*0.6 + 0.4 ) ;
+	//now Lighting ---------------------------------------------------------------------------------------------------------------------------------------------------------
+	float3 N = normalize(iNormal);
+ 
+         //Remarks: 
+ 
+         //we could do this normalize() in vert shader, or skip it
+         //see some info at lighthouse3d GLSL explanations    
+ 	float3 eyepos = float3(124,44,90);
+ 	float4 lightpos = float4(164,144,30,1);
+     float3 EyeDir = normalize(eyepos - iPos.xyz);
+     float3 LightDir = normalize(lightpos.xyz -  (iPos * lightpos.w));
+     float3 HalfAngle = normalize(LightDir + EyeDir);
+ 
+     float NdotL = dot(LightDir, N);
+     float NdotH = dot(HalfAngle, N);
+     float4 Lit = lit(NdotL,NdotH,2.718281828);
+//	oColour = lightDiffuse * Lit.y + lightSpecular * Lit.z + ambient + blended_color;
+//	oColour = (Lit.y+Lit.z+0.3)*blended_color;
+	oColour = (Lit.y+Lit.z+0.3)/3.0+blended_color-0.6;
+	
+}

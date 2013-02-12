@@ -1,0 +1,40 @@
+// By madmarx, thanks to nvidia for their paper in gpu gems 3.
+vertex_program triPlanarMaterial1_vs cg
+{
+	source triplanarTexture.cg										
+	entry_point triplanar_OS_vs								
+	profiles vs_2_0 arbvp1										
+	default_params
+	{																	
+		param_named_auto worldviewproj worldviewproj_matrix
+	}	
+}
+
+fragment_program triPlanarMaterial1_ps cg 
+{
+	source triplanarTexture.cg
+	entry_point triplanar_OS_ps
+	profiles ps_2_0 arbfp1
+}
+
+material triPlanarMaterial1
+{
+	technique
+	{
+		pass
+		{
+			vertex_program_ref triPlanarMaterial1_vs
+            {
+            }
+			fragment_program_ref triPlanarMaterial1_ps
+            {
+            }
+			
+			texture_unit
+			{
+				texture Material_grass.png 2d 0
+			}
+		}
+	}
+}
+
