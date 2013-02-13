@@ -41,8 +41,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Main.o \
 	${OBJECTDIR}/GUI.o \
 	${OBJECTDIR}/MdlFileManager.o \
-	${OBJECTDIR}/Mdl.o \
-	${OBJECTDIR}/OgreFramework.o
+	${OBJECTDIR}/OgreFramework.o \
+	${OBJECTDIR}/Mdl.o
 
 
 # C Compiler Flags
@@ -99,15 +99,15 @@ ${OBJECTDIR}/MdlFileManager.o: MdlFileManager.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/MdlFileManager.o MdlFileManager.cpp
 
-${OBJECTDIR}/Mdl.o: Mdl.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mdl.o Mdl.cpp
-
 ${OBJECTDIR}/OgreFramework.o: OgreFramework.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/OgreFramework.o OgreFramework.cpp
+
+${OBJECTDIR}/Mdl.o: Mdl.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mdl.o Mdl.cpp
 
 # Subprojects
 .build-subprojects:

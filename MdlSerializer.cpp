@@ -10,6 +10,7 @@
 #include <OGRE/OgreHardwareBufferManager.h>
 #include "Mdl.h"
 #include "MdlSerializer.h"
+#include <OGRE/OgreSubMesh.h>
 
  MdlSerializer::MdlSerializer()
  {
@@ -32,6 +33,8 @@
      stream->read(&texture,sizeof(unsigned int));
      stream->read(&vertices,sizeof(unsigned int));
      stream->read(&indices,sizeof(unsigned int));
+     float bounds[6];//{minX,minY,minZ,maxX,maxY,maxZ}
+     stream->read(bounds,sizeof(float)*6);
      std::string textureFName;
      for(int i=0;i<texture;i++){
          char c;
@@ -71,6 +74,7 @@
     }*/
     stream->read(arrayV,sizeof(float)*(3+3+2)*vertices);//should also work - automatically grab ALL vertex data to array in one operation :) C++ is great
     vbuf->writeData(0, vbuf->getSizeInBytes(), arrayV, true);
+    delete [] arrayV;
     // "data" is the Ogre::VertexData* we created before
     Ogre::VertexBufferBinding* bind = data->vertexBufferBinding;
     bind->setBinding(0, vbuf);
@@ -82,5 +86,11 @@
     mesh->indexData->indexBuffer = ibuf;     // The pointer to the index buffer
     mesh->indexData->indexCount = indices; // The number of indices we'll use
     mesh->indexData->indexStart = 0;
-    
+    unsigned int * arrayI = new unsigned int[indices];
+    stream->read(arrayI,sizeof(unsigned int)*indices);
+    ibuf->writeData(0, ibuf->getSizeInBytes(), arrayI, true);
+    delete [] arrayI;
+    pDest->mesh->_setBounds(Ogre::AxisAlignedBox(bounds[0],bounds[1],bounds[2],bounds[3],bounds[4],bounds[5]));
+    pDest->mesh->_setBoundingSphereRadius(std::max(bounds[3]-bounds[0], std::max(bounds[4]-bounds[1], bounds[5]-bounds[2]))/2.0f);
+    pDest->mesh->load();//TODO need?
  }

@@ -277,6 +277,15 @@ bool OgreFramework::keyPressed(const OIS::KeyEvent &keyEventRef)
     if(m_pKeyboard->isKeyDown(OIS::KC_H)){
         cursor_h=0;
     }
+    if(m_pKeyboard->isKeyDown(OIS::KC_HOME)){
+        map->load("map.map");
+    }
+    if(m_pKeyboard->isKeyDown(OIS::KC_INSERT)){
+        map->load("autosave.map");
+    }
+    if(m_pKeyboard->isKeyDown(OIS::KC_END)){
+        map->save("map.map");
+    }
     return true;
 }
 

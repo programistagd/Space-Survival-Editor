@@ -8,6 +8,8 @@
 #include "Map.h"
 #include "OgreFramework.h"
 #include <set>
+#include <fstream>
+
 bool Map::initialised = false;
 std::vector<Triangle> Map::tris[5];
 
@@ -29,6 +31,10 @@ void generateTris(int size,std::vector<Triangle> &tris){
 }
 
 Map::Map(int x,int y,float height=1.0f) {
+    init(x,y,height);
+}
+
+void Map::init(int x,int y, float height=0.0f){
     if(!initialised){
         generateTris(128,tris[0]);
         generateTris(64,tris[1]);
@@ -387,5 +393,44 @@ void Map::deselect(){
 }*/
 
 int Map::save(const char* filename){
-    return -1;//TODO saving
+    OgreFramework::getSingletonPtr()->caption->setCaption("Saving...");
+    OgreFramework::getSingletonPtr()->m_pRoot->renderOneFrame();
+    std::ofstream out;
+    out.open(filename,std::ios::out|std::ios::trunc|std::ios::binary);
+    if(!out.is_open())
+        return -1;
+    //w*h|h+mat
+    
+    out.write((char*)&x,sizeof(unsigned int));
+    out.write((char*)&y,sizeof(unsigned int));
+    for(int i=0;i<x*128;i++){
+        for(int j=0;j<y*128;j++){
+            out.write((char*)&map[i][j],sizeof(float));
+            out.write((char*)&map_materials[i][j],sizeof(int));
+        }
+    }
+    out.flush();
+    out.close();
+    return 1;
+}
+
+int Map::load(const char* filename){
+    OgreFramework::getSingletonPtr()->caption->setCaption("Loading...");
+    OgreFramework::getSingletonPtr()->m_pRoot->renderOneFrame();
+    std::ifstream in;
+    in.open(filename,std::ios::in|std::ios::binary);
+    if(!in.is_open())
+        return -1;
+    //w*h|h+mat
+    in.read((char*)&x,sizeof(unsigned int));
+    in.read((char*)&y,sizeof(unsigned int));
+    init(x,y);
+    for(int i=0;i<x*128;i++){
+        for(int j=0;j<y*128;j++){
+            in.read((char*)&map[i][j],sizeof(float));
+            in.read((char*)&map_materials[i][j],sizeof(int));
+        }
+    }
+    in.close();
+    return 1;
 }

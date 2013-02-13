@@ -34,6 +34,7 @@ public:
     static std::string getMaterialById(int material);
     
     Map(int x,int y,float height);
+    void init(int x,int y,float height);
     virtual ~Map();
     Ogre::SceneNode* getChunk(int x,int y, int z);
     float ** map;
@@ -45,8 +46,10 @@ public:
     void select(int x,int y, float radius, float radius_blend);
     void deselect();
     
-    int save(const char* filename);//TODO save
-    int x,y;
+    int save(const char* filename);
+    int load(const char* filename);
+    
+    unsigned int x,y;
     static std::vector<Triangle> tris[5];
 private:
     int smallestX,smallestY,largestX,largestY;//select

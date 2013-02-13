@@ -235,7 +235,8 @@ private:
         #endif
                         }
                 }
-
+                OgreFramework::getSingletonPtr()->m_pLog->logMessage("Autosaving...");
+                OgreFramework::getSingletonPtr()->map->save("autosave.map");
                 OgreFramework::getSingletonPtr()->m_pLog->logMessage("Main loop quit");
                 OgreFramework::getSingletonPtr()->m_pLog->logMessage("Shutdown OGRE...");
         }
