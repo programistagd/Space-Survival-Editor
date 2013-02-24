@@ -11,6 +11,7 @@
 #include <OGRE/OgreVector3.h>
 #include <vector>
 #include "Position.h"
+#include <OGRE/OgreMesh.h>
 
 struct GeneratorInfo{
     float seed;
@@ -31,8 +32,8 @@ public:
     void updatePlayerPos(Ogre::Vector3 pos);
     Ogre::Vector3 getPlayerPos();
   //  Ogre::Vector3 getSunPos();
-   // static PlanetInfo getPlanetInfo(int planetId);
-    void addChunkGen(int x,int y, int z,int seed);
+    //low-level
+    Ogre::MeshPtr getMeshFromMdl(unsigned int id);
 private:
     
     void loadHeightMap(int x,int y,int lod);
@@ -40,6 +41,9 @@ private:
     boost::shared_ptr<boost::thread> generationThread;
     Loader();
     static Loader* loader;
+    
+    std::map<int,Ogre::MeshPtr> models;
+    
 };
 
 #endif	/* SPLOADER_H */

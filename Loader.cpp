@@ -6,6 +6,7 @@
  */
 
 #include "Loader.h"
+#include "Utils.h"
 //#include "TerrainGenerator.h"
 #include <string>
 #include <OGRE/OgreManualObject.h>
@@ -158,4 +159,156 @@ void Loader::addChunkGen(int x, int y,int z, int seed){
 Ogre::Vector3 Loader::getPlayerPos(){
     //TODO
     
+}
+
+Ogre::MeshPtr Loader::getMeshFromMdl(unsigned int id){
+    if(!models[id].isNull()){
+        return models[id];
+    }
+    std::string name = "mesh"+Utils::toStr(id);
+    std::ifstream stream;
+    stream.open(("Models/"+name+".mdl").c_str(),std::ios::in|std::ios::binary);
+    
+    Ogre::ManualObject* obj = OgreFramework::getSingletonPtr()->m_pSceneMgr->createManualObject();
+     unsigned int texture, normalmap, vertices, indices;
+     short endian;
+     stream.read((char*)&endian,sizeof(short));
+     stream.read((char*)&texture,sizeof(unsigned int));
+     stream.read((char*)&normalmap,sizeof(unsigned int));
+     stream.read((char*)&vertices,sizeof(unsigned int));
+     stream.read((char*)&indices,sizeof(unsigned int));
+     float bounds[6];//{minX,minY,minZ,maxX,maxY,maxZ}
+     stream.read((char*)bounds,sizeof(float)*6);
+     std::string textureFName,normalMapFName;
+     for(int i=0;i<texture;i++){
+         char c;
+         stream.read((char*)&c,sizeof(char));
+         textureFName+=c;
+     }
+     if(normalmap>0){
+        for(int i=0;i<texture;i++){
+            char c;
+            stream.read((char*)&c,sizeof(char));
+            normalMapFName+=c;
+        }
+     }
+     if(normalmap>0)
+        obj->begin("NormalMapTexture");
+     else
+        obj->begin("PlainTexture");
+    float * arrayV = new float[vertices*(3+3+2)];
+    stream.read((char*)arrayV,sizeof(float)*(3+3+2)*vertices);//should also work - automatically grab ALL vertex data to array in one operation :) C++ is great
+    
+    for(int i=0;i<vertices;i++){
+        int ptr = i*(3+3+2);
+        obj->position(arrayV[ptr],arrayV[ptr+1],arrayV[ptr+2]);
+        obj->normal(arrayV[ptr+3],arrayV[ptr+4],arrayV[ptr+5]);
+        obj->textureCoord(arrayV[ptr+6],arrayV[ptr+7]);
+    }
+    
+    delete [] arrayV;
+    unsigned int * arrayI = new unsigned int[indices];
+    stream.read((char*)arrayI,sizeof(unsigned int)*indices);
+    
+    for(int i=0;i<indices;i++){
+        obj->index(arrayI[i]);
+    }
+    
+    delete [] arrayI;
+    
+    obj->end();
+    /*if(normalmap>0){
+        obj->setMaterialName("NormalMapTexture");
+        obj->addTextureAlias("normalmap",normalMapFName);
+    }
+    else{
+        obj->setMaterialName("OneTexture");
+    }
+    obj->addTextureAlias("textura",textureFName);*/
+    OgreFramework::getSingletonPtr()->m_pSceneMgr->getRootSceneNode()->createChildSceneNode()->attachObject(obj);
+    Ogre::MeshPtr mesh = obj->convertToMesh(name);
+    mesh->getSubMesh(0)->addTextureAlias("textura",textureFName);//TODO normalmap
+    return mesh;
+    
+    /*Ogre::MeshPtr meshM = Ogre::MeshManager::getSingletonPtr()->createManual(name,"General");
+     unsigned int texture, normalmap, vertices, indices;
+     short endian;
+     stream.read((char*)&endian,sizeof(short));
+     stream.read((char*)&texture,sizeof(unsigned int));
+     stream.read((char*)&normalmap,sizeof(unsigned int));
+     stream.read((char*)&vertices,sizeof(unsigned int));
+     stream.read((char*)&indices,sizeof(unsigned int));
+     float bounds[6];//{minX,minY,minZ,maxX,maxY,maxZ}
+     stream.read((char*)bounds,sizeof(float)*6);
+     std::string textureFName,normalMapFName;
+     for(int i=0;i<texture;i++){
+         char c;
+         stream.read((char*)&c,sizeof(char));
+         textureFName+=c;
+     }
+     if(normalmap>0){
+        for(int i=0;i<texture;i++){
+            char c;
+            stream.read((char*)&c,sizeof(char));
+            normalMapFName+=c;
+        }
+     }
+     Ogre::SubMesh* mesh = meshM->createSubMesh();
+        // We first create a VertexData
+     Ogre::VertexData* data = new Ogre::VertexData();
+    // Then, we link it to our Mesh/SubMesh :
+     #ifdef SHARED_GEOMETRY
+        meshM->sharedVertexData = data;
+     #else
+        mesh->useSharedVertices = false; // This value is 'true' by default
+        mesh->vertexData = data;
+     #endif
+    // We have to provide the number of verteices we'll put into this Mesh/SubMesh
+     data->vertexCount = vertices;
+    // Then we can create our VertexDeclaration
+     Ogre::VertexDeclaration* decl = data->vertexDeclaration;
+     size_t offset = 0;
+    decl->addElement(0, offset, Ogre::VET_FLOAT3, Ogre::VES_POSITION);
+    offset += Ogre::VertexElement::getTypeSize(Ogre::VET_FLOAT3);
+    decl->addElement(0, offset, Ogre::VET_FLOAT3, Ogre::VES_NORMAL);
+    offset += Ogre::VertexElement::getTypeSize(Ogre::VET_FLOAT3);
+    decl->addElement(0, offset, Ogre::VET_FLOAT2, Ogre::VES_TEXTURE_COORDINATES);
+    offset += Ogre::VertexElement::getTypeSize(Ogre::VET_FLOAT2);//you can't animate because one buffer
+    Ogre::HardwareVertexBufferSharedPtr vbuf = Ogre::HardwareBufferManager::getSingleton().createVertexBuffer(
+        decl->getVertexSize(0),                     // This value is the size of a vertex in memory
+        vertices,                                 // The number of vertices you'll put into this buffer
+        Ogre::HardwareBuffer::HBU_STATIC_WRITE_ONLY // Properties
+    );
+    float * arrayV = new float[vertices*(3+3+2)];
+
+    stream.read((char*)arrayV,sizeof(float)*(3+3+2)*vertices);//should also work - automatically grab ALL vertex data to array in one operation :) C++ is great
+    vbuf->writeData(0, vbuf->getSizeInBytes(), arrayV, true);
+    delete [] arrayV;
+    // "data" is the Ogre::VertexData* we created before
+    Ogre::VertexBufferBinding* bind = data->vertexBufferBinding;
+    bind->setBinding(0, vbuf);
+    Ogre::HardwareIndexBufferSharedPtr ibuf = Ogre::HardwareBufferManager::getSingleton().createIndexBuffer(
+        Ogre::HardwareIndexBuffer::IT_16BIT,        // You can use several different value types here
+        indices,                                  // The number of indices you'll put in that buffer
+        Ogre::HardwareBuffer::HBU_STATIC_WRITE_ONLY // Properties
+    );
+    mesh->indexData->indexBuffer = ibuf;     // The pointer to the index buffer
+    mesh->indexData->indexCount = indices; // The number of indices we'll use
+    mesh->indexData->indexStart = 0;
+    unsigned int * arrayI = new unsigned int[indices];
+    stream.read((char*)arrayI,sizeof(unsigned int)*indices);
+    ibuf->writeData(0, ibuf->getSizeInBytes(), arrayI, true);
+    delete [] arrayI;
+    if(normalmap>0){
+        mesh->setMaterialName("NormalMapTexture");
+        mesh->addTextureAlias("normalmap",normalMapFName);
+    }
+    else{
+        //mesh->setMaterialName("OneTexture");
+    }
+    mesh->addTextureAlias("textura",textureFName);
+    meshM->_setBounds(Ogre::AxisAlignedBox(bounds[0],bounds[1],bounds[2],bounds[3],bounds[4],bounds[5]));
+    meshM->_setBoundingSphereRadius(std::max(bounds[3]-bounds[0], std::max(bounds[4]-bounds[1], bounds[5]-bounds[2]))/2.0f);
+    meshM->load();//TODO need?
+    return meshM;*/
 }

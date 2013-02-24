@@ -76,6 +76,7 @@ public:
 
  
 private:
+    Ogre::SceneNode* triN;
         void setupScene(){
             /*Effects::getManager()->addLight(Loader::getLoader()->getSunPos(),"SunLight");
             Effects::getManager()->initSky();
@@ -88,7 +89,13 @@ private:
                     }
                 }
             }*/
-            OgreFramework::getSingletonPtr()->map = new Map(64,64,20.0f);
+            OgreFramework::getSingletonPtr()->map = new Map(64,64,-30.0f);
+            Ogre::MeshPtr mesh = Loader::getLoader()->getMeshFromMdl(1);
+            triN = OgreFramework::getSingletonPtr()->m_pSceneMgr->getRootSceneNode()->createChildSceneNode();
+            triN->attachObject(OgreFramework::getSingletonPtr()->m_pSceneMgr->createEntity("test","mesh1","General"));//triN->attachObject(OgreFramework::getSingletonPtr()->m_pSceneMgr->createEntity("tri.mdl"));
+            triN->setPosition(1,10,1);
+            //triN->setScale(20,20,20);
+            triN->setVisible(true);
         }
 	void run(){
             boost::unique_lock<boost::mutex> lock(OgreFramework::getSingletonPtr()->mutex);
@@ -235,8 +242,8 @@ private:
         #endif
                         }
                 }
-                OgreFramework::getSingletonPtr()->m_pLog->logMessage("Autosaving...");
-                OgreFramework::getSingletonPtr()->map->save("autosave.map");
+                //OgreFramework::getSingletonPtr()->m_pLog->logMessage("Autosaving...");
+                //OgreFramework::getSingletonPtr()->map->save("autosave.map");
                 OgreFramework::getSingletonPtr()->m_pLog->logMessage("Main loop quit");
                 OgreFramework::getSingletonPtr()->m_pLog->logMessage("Shutdown OGRE...");
         }

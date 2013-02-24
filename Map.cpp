@@ -403,8 +403,8 @@ int Map::save(const char* filename){
     
     out.write((char*)&x,sizeof(unsigned int));
     out.write((char*)&y,sizeof(unsigned int));
-    for(int i=0;i<x*128;i++){
-        for(int j=0;j<y*128;j++){
+    for(int i=0;i<x*128+1;i++){
+        for(int j=0;j<y*128+1;j++){
             out.write((char*)&map[i][j],sizeof(float));
             out.write((char*)&map_materials[i][j],sizeof(int));
         }
@@ -425,8 +425,8 @@ int Map::load(const char* filename){
     in.read((char*)&x,sizeof(unsigned int));
     in.read((char*)&y,sizeof(unsigned int));
     init(x,y);
-    for(int i=0;i<x*128;i++){
-        for(int j=0;j<y*128;j++){
+    for(int i=0;i<x*128+1;i++){
+        for(int j=0;j<y*128+1;j++){
             in.read((char*)&map[i][j],sizeof(float));
             in.read((char*)&map_materials[i][j],sizeof(int));
         }

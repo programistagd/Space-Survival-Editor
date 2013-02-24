@@ -48,7 +48,7 @@ material OneTexture
             fragment_program_ref OneTexture_PS    
             {
             }
-            texture_unit
+            texture_unit textura
             {
                                 // This pass will use this 2D texture as its input
                 texture Material_grass.png 2d        
