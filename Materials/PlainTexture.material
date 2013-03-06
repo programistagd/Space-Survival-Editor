@@ -40,7 +40,6 @@ material PlainTexture
                 // This technique has one pass
         pass                    
         {
-        
                         // Make this pass use the vertex shader defined above
             vertex_program_ref PlainTexture_VS    
             {

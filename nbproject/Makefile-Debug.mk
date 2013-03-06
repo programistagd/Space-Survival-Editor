@@ -35,12 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Utils.o \
 	${OBJECTDIR}/Map.o \
 	${OBJECTDIR}/Loader.o \
+	${OBJECTDIR}/MdlSerializer.o \
 	${OBJECTDIR}/Main.o \
 	${OBJECTDIR}/GUI.o \
-	${OBJECTDIR}/OgreFramework.o
+	${OBJECTDIR}/MdlFileManager.o \
+	${OBJECTDIR}/OgreFramework.o \
+	${OBJECTDIR}/Mdl.o
 
 
 # C Compiler Flags
@@ -67,11 +69,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spacesurvmapeditor: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/spacesurvmapeditor ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
-${OBJECTDIR}/Utils.o: Utils.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/Utils.o Utils.cpp
-
 ${OBJECTDIR}/Map.o: Map.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -81,6 +78,11 @@ ${OBJECTDIR}/Loader.o: Loader.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/Loader.o Loader.cpp
+
+${OBJECTDIR}/MdlSerializer.o: MdlSerializer.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/MdlSerializer.o MdlSerializer.cpp
 
 ${OBJECTDIR}/Main.o: Main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -92,10 +94,20 @@ ${OBJECTDIR}/GUI.o: GUI.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/GUI.o GUI.cpp
 
+${OBJECTDIR}/MdlFileManager.o: MdlFileManager.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/MdlFileManager.o MdlFileManager.cpp
+
 ${OBJECTDIR}/OgreFramework.o: OgreFramework.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/OgreFramework.o OgreFramework.cpp
+
+${OBJECTDIR}/Mdl.o: Mdl.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g `pkg-config --cflags OGRE` `pkg-config --cflags OIS`    -MMD -MP -MF $@.d -o ${OBJECTDIR}/Mdl.o Mdl.cpp
 
 # Subprojects
 .build-subprojects:

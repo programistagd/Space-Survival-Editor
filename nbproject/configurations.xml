@@ -13,6 +13,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="Formats" projectFiles="true">
+        <itemPath>Mdl.cpp</itemPath>
+        <itemPath>Mdl.h</itemPath>
+        <itemPath>MdlFileManager.cpp</itemPath>
+        <itemPath>MdlFileManager.h</itemPath>
+        <itemPath>MdlSerializer.cpp</itemPath>
+        <itemPath>MdlSerializer.h</itemPath>
       </logicalFolder>
       <itemPath>GUI.cpp</itemPath>
       <itemPath>GUI.h</itemPath>
@@ -24,8 +30,6 @@
       <itemPath>OgreFramework.cpp</itemPath>
       <itemPath>OgreFramework.h</itemPath>
       <itemPath>Position.h</itemPath>
-      <itemPath>Utils.cpp</itemPath>
-      <itemPath>Utils.h</itemPath>
       <itemPath>globals.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"

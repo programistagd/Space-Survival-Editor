@@ -29,8 +29,7 @@ OgreFramework::OgreFramework()
     m_pViewport                 = 0;
     m_pLog                              = 0;
     m_pTimer                    = 0;
-    
-    
+
     m_pInputMgr                 = 0;
     m_pKeyboard                 = 0;
     m_pMouse                    = 0;

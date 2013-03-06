@@ -58,7 +58,6 @@ public:
         Ogre::SceneManager*                     m_pSceneMgr;
         Ogre::RenderWindow*                     m_pRenderWnd;
         Ogre::Camera*                           m_pCamera;
-        
         float cursor_x,cursor_y,cursor_r;
         float cursor_rb;
         float cursor_h;bool cursor_relative,cursor_select;
